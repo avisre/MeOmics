@@ -1,0 +1,140 @@
+body {
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Aligns content vertically */
+
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 61px;
+}
+
+.background {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* Align items vertically */
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.background ul {
+    display: flex;
+    list-style: none;
+    /* Remove default list style */
+}
+
+.background ul li {
+    margin-right: 20px;
+    /* Add some spacing between menu items */
+}
+
+.background ul li a {
+    color: black;
+    /* Set link color */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.background ul li a:hover {
+    text-decoration: underline;
+    /* Add underline on hover */
+}
+
+.registered-in-england {
+    display: flex;
+}
+
+.registered-in-england img {
+    width: 30px;
+    /* Set width for social icons */
+    height: 30px;
+    /* Set height for social icons */
+    margin-left: 10px;
+    /* Add some spacing between social icons */
+}
+
+/* Adjusted the selector */
+.background img.image-icon {
+    width: 70px;
+    height: 50px;
+}
+
+
+.container1,
+.container2,
+.container3,
+.container4,
+.container5,
+.container6 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 150px;
+
+
+}
+
+h3 {
+    padding: 0;
+}
+
+.image img {
+    max-width: 50%;
+    /* Adjust the width of the images */
+    height: auto;
+    margin-right: 20px;
+    /* Add margin between images */
+}
+
+
+.content .numbers {
+    width: 10VW;
+    height: 10vh;
+}
+
+.content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.footer {
+
+    background-color: #212529;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.footer div {
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.footer img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
