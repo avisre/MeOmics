@@ -1,6 +1,6 @@
 body {
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -74,6 +74,44 @@ h1 {
 }
 
 
+.container1,
+.container2,
+.container3,
+.container4 {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 150px;
+
+
+}
+
+h3 {
+    padding: 0;
+}
+
+.image img {
+    width: 60%;
+    height: auto;
+
+
+}
+
+.content .numbers {
+    width: 10VW;
+    height: 10vh;
+}
+
+.content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+
+}
 
 .footer {
 
