@@ -4,30 +4,39 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <link rel="stylesheet" href="/public/css/science.css">
+    <link rel="stylesheet" href="../public/css/science.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const burger = document.querySelector('.burger');
+                const navLinks = document.querySelector('.nav-links');
+            
+                burger.addEventListener('click', function() {
+                    // Toggle height of nav-links
+                    if (navLinks.style.height === '100%') {
+                        navLinks.style.height = '0';
+                    } else {
+                        navLinks.style.height = '100%'; // Assume you want to make it full height on toggle
+                    }
+                });
+            });
+        </script>
 </head>
 
 <body>
     <header>
+        <!-- <img class="image-icon" alt="" src="../public/image@2x.png" /> -->
 
-        <div class="background">
+        <img class="image-icon" alt="" src="../public/logo-1@2x.png" />
 
-
-            <!-- <img class="image-icon" alt="" src="../public/image@2x.png" /> -->
-
-
-
-            <img class="image-icon" alt="" src="../public/logo-1@2x.png" />
-
-            <ul>
-
+        <nav>
+            <ul class="nav-links">
                 <li><a href="#">Home</a></li>
-
                 <li><a href="#">Schizophrenia</a></li>
                 <li><a href="#">Mission</a></li>
                 <li><a href="#">Contact Us</a></li>
@@ -36,36 +45,38 @@
                 <li><a href="#">Our Research</a></li>
                 <li><a href="#">Investors</a></li>
             </ul>
-            <div class="registered-in-england">
-                <img src="/public/linkedin_svgrepo.com.svg" alt="linkedin logo">
-                <img src="/public/twitter-3-logo_svgrepo.com (1).svg" alt="linkedin logo">
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
+        </nav>
+
+        <div class="registered-in-england">
+            <img src="../public/linkedin_svgrepo.com.svg" alt="linkedin logo">
+            <img src="../public/twitter-3-logo_svgrepo.com (1).svg" alt="linkedin logo">
+        </div>
 
     </header>
     <main>
 
         <section class="container1">
-
-
             <div class="content">
-
-
-
                 <p>
-
                     MeOmics will capitalise upon the academic research undertaken by the founders at <b>Cardiff
                         University</b>
                     to create an
 
                     innovative <b>Precision Psychiatry Platform</b> for improved drug discovery and prediction of
                     optimal drug
-                    therapies for individual mental health patients..</p>
+                    therapies for individual mental health patients..
+                </p>
             </div>
         </section>
 
         <section class="container2">
             <div class="content">
-
                 <p>MeOmics has a unique physiological assay, drawn from significant experience in psychiatric genomics
                     and stem cell biology, that can measure a direct biological read-out of multiple interacting neurons
                     derived from clinically and genetically characterised patient stem-cell lines (see figure right). In
@@ -74,18 +85,16 @@
                     measurable, contextually appropriate, repeatable test. </p>
             </div>
             <div class="image">
-                <img src="/public/scince 1.svg" alt="positve message about mental health">
+                <img src="../public/scince 1.svg" alt="positve message about mental health">
             </div>
-
         </section>
 
         <section class="container3">
-
             <div class="image">
-                <img src="/public/m/IMG-20240419-WA0012.jpg" alt="positve message about mental health">
+                <img src="../public/m/IMG-20240419-WA0012.jpg" alt="positve message about mental health">
             </div>
-            <div class="content">
 
+            <div class="content">
                 <p> MeOmics will integrate large volumes of complex multimodal data to link the patient’s cell
                     electrophysiological profile to multiple clinical parameters and genetic differences. Together these
                     methodologies will create a tool to predict the optimal drug therapy based upon the cell responses
@@ -101,14 +110,12 @@
                     computational tools to stratify patients based on cell response, genotype and clinical data to
                     improve predictive power. By combining these data sources, the platform will bring personalised
                     medicine to psychiatry.
-
                 </p>
             </div>
         </section>
+
         <section class="container4">
-
             <div class="content">
-
                 <p>Beyond the creation of the primary product, validation of our platform will additionally open up the
                     potential for its use as a preclinical screen for new drug candidates as well as existing
                     treatments. This will give access to an additional market for drug discovery and development with
@@ -120,18 +127,19 @@
                     screening service products for the mental healthcare market.
                 </p>
             </div>
-            <div class="image">
 
-                <img src="/public/m/IMG-20240419-WA0001.jpg" alt="positve message about mental health">
+            <div class="image">
+                <img src="../public/m/IMG-20240419-WA0001.jpg" alt="positve message about mental health">
             </div>
         </section>
+
         <section class="container5">
 
             <div class="image">
-                <img src="/public/m/IMG-20240419-WA0010.jpg" alt="positve message about mental health">
+                <img src="../public/m/IMG-20240419-WA0010.jpg" alt="positve message about mental health">
             </div>
-            <div class="content">
 
+            <div class="content">
                 <p> MeOmics immediate plan is that patients will be identified by a Research Fellow located at a
                     suitable healthcare provider's patient facility. Working in collaboration with MeOmics, they will
                     carry out a detailed clinical assessment of the patients and forward the clinical information and
@@ -147,7 +155,6 @@
         <section class="container6">
 
             <div class="content">
-
                 <p>MeOmics have currently tested around 50 patients in our laboratory. As we scale-up, we will expand
                     the MEA assay capacity to create a high capacity, high throughput MEA workflow based on an
                     established 96-well plate protocol (Biocircuit MEA 96, Axion) integrated via robotics into a unique
@@ -158,8 +165,8 @@
                     reiterated initially for up to 200 patients to refine the assay process and data
                     analytics before progressing to hundreds of patients.
                 </p>
-                <p>
 
+                <p>
                     <b> Patient neuronal cells are cultured in multi-well plates for electrical recording:</b>
 
                     (A) Large scale, 96-well based MEA assay, showing minimal variation of Synchronized Burst (SB)
@@ -170,17 +177,15 @@
                     measure of synaptic
                     a GABA antagonist. Changes in SB frequency correlate well with the known drug IC50 value.
                 </p>
+
             </div>
             <div class="image">
-
-                <img src="/public/science 2.svg" alt="positve message about mental health">
+                <img src="../public/science 2.svg" alt="positve message about mental health">
             </div>
         </section>
 
 
         <section class="container1">
-
-
             <div class="content">
 
                 <h3>Peer-Reviewed Published Scientific Papers</h3>
@@ -217,14 +222,14 @@
             <div class="background5">
                 <div class="background6">
                     <div class="backgroundhorizontalborder">
-                        <div class="registered-in-england">
+                        <div>
                             <span>Copyright © 2024 MeOmics Precision Medicine Ltd. - All Rights Reserved.</span>
                         </div>
                     </div>
                 </div>
                 <div class="registered-in-england">
-                    <img src="/public/linkedin_svgrepo.com.svg" alt="linkedin logo">
-                    <img src="/public/twitter-3-logo_svgrepo.com (1).svg" alt="linkedin logo">
+                    <img src="../public/linkedin_svgrepo.com.svg" alt="linkedin logo">
+                    <img src="../public/twitter-3-logo_svgrepo.com (1).svg" alt="linkedin logo">
                 </div>
             </div>
 
