@@ -1,129 +1,70 @@
+/*CSS for all media queries*/
+
+/*Setting root and body to be at least the size of the viewport*/
+html,
 body {
-    width: 100vw;
-    height: 150vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* Aligns content vertically */
-
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    background-size: 100%;
-
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     font-family: "Barlow", sans-serif;
+    font-size: 16px;
     font-weight: 400;
     font-style: normal;
 }
 
-h1 {
-    font-size: 61px;
-}
-
-.background {
-    width: 100%;
-    height: 30vh;
+/*Header and navigation*/
+header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    /* Align items vertically */
-    font-weight: 600;
-    margin-top: 30px;
+    padding: 2%;
 }
 
-.background ul {
-    display: flex;
+.nav-links {
     list-style: none;
-    /* Remove default list style */
-}
-
-.background ul li {
-    margin-right: 20px;
-    /* Add some spacing between menu items */
-}
-
-.background ul li a {
-    color: black;
-    /* Set link color */
-    text-decoration: none;
-    /* Remove underline */
-}
-
-.background ul li a:hover {
-    text-decoration: underline;
-    /* Add underline on hover */
-}
-
-.registered-in-england {
     display: flex;
-}
-
-.registered-in-england img {
-    width: 30px;
-    /* Set width for social icons */
-    height: 30px;
-    /* Set height for social icons */
-    margin-left: 10px;
-    /* Add some spacing between social icons */
-}
-
-/* Adjusted the selector */
-.background img.image-icon {
-    width: 70px;
-    height: 50px;
-}
-
-
-.container1,
-.container2,
-.container3,
-.container4,
-.container5,
-.container6 {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 150px;
-
-
-}
-
-h3 {
+    flex: 1;
+    margin: 0;
     padding: 0;
 }
 
-.image img {
-    max-width: 50%;
-    /* Adjust the width of the images */
-    height: auto;
-    margin-right: 20px;
-    /* Add margin between images */
+.nav-links li {
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:hover {
+    padding-bottom: 2%;
+    border-bottom-style: solid;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
 }
 
 
-.content .numbers {
-    width: 10VW;
-    height: 10vh;
-}
-
-.content {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-
-
-}
-
+/*Footer*/
 .footer {
-
     background-color: #212529;
     color: #ffffff;
-    padding: 20px 0;
+    padding: 2% 0;
     text-align: center;
-    font-size: 14px;
+    font-size: 0.625rem;
     margin-top: auto;
 }
 
@@ -138,3 +79,274 @@ h3 {
     height: 20px;
     margin-right: 5px;
 }
+
+/*Layout*/
+section {
+    margin: 2%;
+}
+
+
+@media screen and (max-width:600px) {
+
+    /*Navigation - Hamburger*/
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 0;
+        top: 60px;
+        /* Adjust based on your header's height */
+        background-color: #212529;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+        transition: height 0.5s ease;
+    }
+
+    .nav-links li {
+        padding: 15px 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .burger {
+        display: block;
+        color: black;
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .registered-in-england {
+        display: none;
+    }
+
+    .image-icon {
+        width: 20%;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:601px) and (max-width:900px) {
+
+    /*Navigation - Hamburger. I am also doing a hamburger meny for tablet because too maony links and overflow otherwise*/
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 0;
+        top: 60px;
+        /* Adjust based on your header's height */
+        background-color: #212529;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+        transition: height 0.5s ease;
+    }
+
+    .nav-links li {
+        padding: 15px 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .burger {
+        display: block;
+        color: black;
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .registered-in-england {
+        display: none;
+    }
+
+    .image-icon {
+        width: 20%;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:901px) {
+
+    /*Header*/
+    .registered-in-england {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .registered-in-england img {
+        width: 20%;
+    }
+
+    .image-icon {
+        width: 10%;
+    }
+
+    /*Layout*/
+
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .container1,
+    .container2,
+    .container3,
+    .container4,
+    .container5,
+    .container6 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 2%;
+    }
+
+    .image {
+        width: 50%;
+    }
+
+    .content {
+        width: 50%;
+        padding: 2%;
+    }
+
+    .image img {
+        width: 100%;
+    }
+}
+
+
+
+/*
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1 {
+    font-size: 61px;
+}
+
+.background {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.background ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.background ul li {
+    margin-right: 20px;
+}
+
+.background ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.background ul li a:hover {
+    text-decoration: underline;
+}
+
+.registered-in-england {
+    display: flex;
+}
+
+.registered-in-england img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.background img.image-icon {
+    width: 70px;
+    height: 50px;
+}
+
+h3 {
+    padding: 0;
+}
+
+.image img {
+    max-width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.content .numbers {
+    width: 10VW;
+    height: 10vh;
+}
+
+.content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+*/
