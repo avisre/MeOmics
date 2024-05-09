@@ -1,205 +1,219 @@
 body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-image: url("/public/background\ image.svg");
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    background-size: 100%;
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/public/background\ image.svg");
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: 100%;
 
-
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .background {
-    width: 100vw;
-    height: 30vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-weight: 600;
-    margin-top: 50px;
-
-
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-weight: 600;
+  margin-top: 50px;
 }
 
 .background ul {
-    display: flex;
-    list-style: none;
-    /* Remove default list style */
+  display: flex;
+  list-style: none;
+  /* Remove default list style */
 }
 
 .background ul li {
-    margin-right: 20px;
-    /* Add some spacing between menu items */
+  margin-right: 20px;
+  /* Add some spacing between menu items */
 }
 
 .background ul li a {
-    color: black;
-    /* Set link color */
-    text-decoration: none;
-    /* Remove underline */
+  color: black;
+  /* Set link color */
+  text-decoration: none;
+  /* Remove underline */
 }
 
 .background ul li a:hover {
-    text-decoration: underline;
-    /* Add underline on hover */
+  text-decoration: underline;
+  /* Add underline on hover */
 }
 
 .registered-in-england {
-    display: flex;
+  display: flex;
 }
 
 .registered-in-england img {
-    width: 30px;
-    /* Set width for social icons */
-    height: 30px;
-    /* Set height for social icons */
-    margin-left: 10px;
-    /* Add some spacing between social icons */
+  width: 30px;
+  /* Set width for social icons */
+  height: 30px;
+  /* Set height for social icons */
+  margin-left: 10px;
+  /* Add some spacing between social icons */
 }
 
-
 div.btn {
-    width: 100vw;
-    justify-content: center;
+  width: 100vw;
+  justify-content: center;
 }
 
 button.btn1 {
-    margin-left: 35%;
+  margin-left: 35%;
 
-    color: #ffffff;
-    background-color: #43ABDE;
-    border-radius: 10px;
-    border: 1px solid #ffffff;
-    font-size: 14pt;
-    padding: 5px 50px !important;
+  color: #ffffff;
+  background-color: #1a2650;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  font-size: 14pt;
+  padding: 5px 50px !important;
 }
 
 .unlocking-the-future-container {
-    font-size: 43px;
-    width: 800px;
-    display: flex;
-    flex-direction: row;
-    font-weight: 600;
-    justify-content: center;
+  font-size: 43px;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  font-weight: 600;
+  justify-content: center;
 }
 
-
 img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .image-icon {
-    width: 70px;
-    height: 50px;
-    margin-right: 50px;
+  width: 70px;
+  height: 50px;
+  margin-right: 50px;
 }
 
 .meomics-is-a {
-    margin-top: 30%;
-    font-size: 24px;
-    width: 80vw;
-    text-align: left;
-    /* Align text to the left */
-    line-height: 150%;
-    margin-left: auto;
-    /* Align to the start (left) */
-    margin-right: auto;
-    /* Align to the start (left) */
+  margin-top: 30%;
+  font-size: 1.3rem;
+  width: 80vw;
+  text-align: left;
+  /* Align text to the left */
+  line-height: 150%;
+  margin-left: auto;
+  /* Align to the start (left) */
+  margin-right: auto;
+  /* Align to the start (left) */
 }
 
 .container {
-    width: 100vw;
-    height: 30vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .container1 {
-    width: 23vw;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  width: 23vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.container3 {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  justify-content: space-between; /* To evenly space out the cards */
+  align-items: center; /* Center the cards vertically */
 }
 
 .container1 img {
-    /* Set your desired size increase */
-    width: 100px;
-    height: 100px;
+  /* Set your desired size increase */
+  width: 100px;
+  height: 100px;
 }
 
 .news {
-    width: 100vw;
-    height: 50vh;
-    background-image: url('/public/latest\ news.svg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-
+  width: 100vw;
+  height: 50vh;
+  background-image: url("/public/latest\ news.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 50px;
 }
 
 .latest-news {
-    width: 100vw;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: left;
+}
 
+.latest-news h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.latest-news img {
+  width: 100px;
+  height: 80px;
+  margin: 0 10px; /* Add space between images */
+}
+
+.latest-news p {
+  margin-top: 10px;
 }
 
 .container4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .border {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .border img {
-    /* Set your desired size increase */
-    width: 220px;
-    height: 100px;
-    margin: 5px;
-    /* Add some margin between images */
+  /* Set your desired size increase */
+  width: 220px;
+  height: 100px;
+  margin: 5px;
+  /* Add some margin between images */
 }
 
 .partners {
-    text-align: center;
+  text-align: center;
 }
 
 .footer {
-    background-color: #212529;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
+  background-color: #212529;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
 }
 
 .footer div {
-    display: inline-block;
-    margin: 0 10px;
-    cursor: pointer;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
 }
 
 .footer img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }

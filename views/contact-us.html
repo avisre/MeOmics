@@ -26,19 +26,19 @@
 
             <ul>
 
-                <li><a href="#">Home</a></li>
+                <li><a href="/views/index.html">Home</a></li>
 
-                <li><a href="#">Schizophrenia</a></li>
-                <li><a href="#">Mission</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">The Team</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Our Research</a></li>
-                <li><a href="#">Investors</a></li>
+                <li><a href="/views/schizophrenia.html">Schizophrenia</a></li>
+              
+                <li><a href="/views/contact-us.html">Contact Us</a></li>
+                <li><a href="/views/team.html">The Team</a></li>
+                <li><a href="/views/news.html">News</a></li>
+                <li><a href="/views/science.html">Our Research</a></li>
+                <li><a href="/views/Investing.html">Investors</a></li>
             </ul>
             <div class="registered-in-england">
-                <img src="/public/linkedin_svgrepo.com.svg" alt="linkedin logo">
-                <img src="/public/twitter-3-logo_svgrepo.com (1).svg" alt="linkedin logo">
+                <a href="https://www.linkedin.com/company/meomics-technology/"> <img src="/public/linkedin_svgrepo.com.svg" alt="linkedin logo"></a>    
+                    <a href="https://twitter.com/MeOmics_Pre_Med"><img src="/public/twitter-3-logo_svgrepo.com (1).svg" alt="twitter logo"></a>
             </div>
 
     </header>
@@ -70,16 +70,14 @@
             <div class="container5">
 
                 <div class="container5">
-                    <form action="#" method="post">
-                        <input type="text" name="name" placeholder="Your Name">
+                    <form id="contactForm" method="post" action="/add" >
+                        <input type="text" id="name" name="name" placeholder="Your Name" required />
                         <br>
-                        <input type="email" name="email" placeholder="Your Email">
+                        <input type="email" id="email" name="email" placeholder="Your E-mail" required />
                         <br>
-                        <input type="tel" name="phone" placeholder="Your Phone Number">
+                        <textarea id="message" name="message" rows="4" required></textarea>
                         <br>
-                        <textarea name="message" placeholder="Your Message"></textarea>
-                        <br>
-                        <button class="btn">Send Message</button>
+                        <button type="submit" class="btn">Send Message</button>
                     </form>
                 </div>
 
@@ -105,12 +103,72 @@
                     </div>
                 </div>
                 <div class="registered-in-england">
-                    <img src="/public/linkedin_svgrepo.com.svg" alt="linkedin logo">
-                    <img src="/public/twitter-3-logo_svgrepo.com (1).svg" alt="linkedin logo">
+                    <a href="https://www.linkedin.com/company/meomics-technology/"> <img src="/public/linkedin_svgrepo.com.svg" alt="linkedin logo"></a>    
+                    <a href="https://twitter.com/MeOmics_Pre_Med"><img src="/public/twitter-3-logo_svgrepo.com (1).svg" alt="twitter logo"></a>
                 </div>
             </div>
 
     </footer>
+    <script>
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const contactForm = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
+
+    contactForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            message: document.getElementById('message').value
+        };
+        // Assuming you have a function named submitFormToServer to handle the form submission
+        submitFormToServer(formData)
+            .then(() => {
+                // Show success message
+                successMessage.style.display = 'block';
+                // Add the fade-out class after 3 seconds
+                setTimeout(() => {
+                    successMessage.classList.add('fade-out');
+                }, 3000);
+                // You can also reset the form if needed
+                contactForm.reset();
+            })
+            .catch(error => {
+                console.error('Form submission failed:', error);
+                // Handle error if necessary
+            });
+    });
+});
+
+async function submitFormToServer(formData) {
+  
+
+    const response = await fetch('http://localhost:3000/add', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    });
+
+    if (response.ok) {
+        return response.json();
+    } else {
+        throw new Error('Form submission failed.');
+    }
+}
+document.getElementById('contactButton').addEventListener('click', function() {
+    document.getElementById('contactFormSection').scrollIntoView({ behavior: "instant"});
+  });
+   
+    </script>
 </body>
 
 </html>
