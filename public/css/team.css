@@ -1,0 +1,211 @@
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.header img {
+  width: 50%;
+  height: auto;
+}
+
+.background {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.background ul {
+  display: flex;
+  list-style: none;
+}
+
+.background ul li {
+  margin-right: 20px;
+}
+
+.background ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.background ul li a:hover {
+  text-decoration: underline;
+}
+
+.registered-in-england {
+  display: flex;
+}
+
+.registered-in-england img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.main {
+  padding: 20px;
+}
+.big-header {
+  text-align: center; /* Center the content horizontally */
+  margin: 10px;
+}
+
+.big-header img {
+  width: 50%; /* Make the image 50% of its original size */
+  display: block; /* Center the image */
+  margin: 0 auto; /* Center the image */
+  height: auto; /* Maintain aspect ratio */
+}
+.image-icon {
+  width: 70px;
+  height: 50px;
+  margin-right: 50px;
+}
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.team-member {
+  width: 300px;
+  height: 250px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-member .member-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.team-member .member-info img {
+  width: 20%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.team-member .member-info h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 1rem;
+}
+
+.team-member .member-info h3 {
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 1rem;
+}
+
+.team-member .member-info p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.team-member .member-info a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.team-member .member-info a:hover {
+  color: #0056b3;
+}
+
+.footer {
+  background-color: #212529;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer div {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.footer img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+/* Default styles */
+/* Put your existing CSS here */
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  /* Styles for tablets and smaller screens */
+  .background {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .background ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .background ul li {
+    margin: 0 10px;
+  }
+
+  .big-header img {
+    max-width: 100%;
+  }
+
+  .team-member {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for mobile devices */
+  .background {
+    height: auto;
+    padding: 10px;
+  }
+
+  .background ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .background ul li {
+    margin: 10px 0;
+  }
+
+  .team-member {
+    width: 100%;
+  }
+
+  .team-member .member-info {
+    padding: 15px;
+  }
+}
