@@ -3,267 +3,322 @@
 /*Setting root and body to be at least the size of the viewport*/
 html,
 body {
-    width: 100%;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: "Barlow", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    font-style: normal;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*Header and navigation*/
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    flex: 1;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  flex: 1;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 .nav-links li a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .nav-links a:hover {
-    padding-bottom: 2%;
-    border-bottom-style: solid;
+  padding-bottom: 2%;
+  border-bottom-style: solid;
 }
 
 .burger {
-    display: none;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
 .burger div {
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    margin: 5px;
-    transition: all 0.3s ease;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 
-
 /*Footer*/
+
 .footer {
-    background-color: #212529;
-    color: #ffffff;
-    padding: 2% 0;
-    text-align: center;
-    font-size: 0.625rem;
-    margin-top: auto;
+  background-color: #212529;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  margin-top: auto;
+  width: 100vw;
 }
 
 .footer div {
-    display: inline-block;
-    margin: 0 10px;
-    cursor: pointer;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer a:active div {
+  color: blue;
 }
 
 .footer img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
 
 /*Layout*/
 section {
-    margin: 2%;
+  margin: 2%;
 }
 
-
-@media screen and (max-width:600px) {
-
-    /*Navigation - Hamburger*/
-    .nav-links {
-        position: absolute;
-        right: 0;
-        height: 0;
-        top: 60px;
-        /* Adjust based on your header's height */
-        background-color: #212529;
-        flex-direction: column;
-        width: 100%;
-        overflow: hidden;
-        transition: height 0.5s ease;
-    }
-
-    .nav-links li {
-        padding: 15px 10px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-links li a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .burger {
-        display: block;
-        color: black;
-    }
-
-    .toggle .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .toggle .line2 {
-        opacity: 0;
-    }
-
-    .toggle .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-    .registered-in-england {
-        display: none;
-    }
-
-    .image-icon {
-        width: 20%;
-    }
-
-    .image {
-        width: 100%;
-    }
-
-    .image img {
-        width: 100%;
-    }
-
+.message-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px; /* Increase the width and height to accommodate the border */
+  height: 60px;
+  background-color: #1a2650;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+  border: 2px solid white; /* Add a white border */
 }
 
-@media screen and (min-width:601px) and (max-width:900px) {
-
-    /*Navigation - Hamburger. I am also doing a hamburger meny for tablet because too maony links and overflow otherwise*/
-    .nav-links {
-        position: absolute;
-        right: 0;
-        height: 0;
-        top: 60px;
-        /* Adjust based on your header's height */
-        background-color: #212529;
-        flex-direction: column;
-        width: 100%;
-        overflow: hidden;
-        transition: height 0.5s ease;
-    }
-
-    .nav-links li {
-        padding: 15px 10px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-links li a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .burger {
-        display: block;
-        color: black;
-    }
-
-    .toggle .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .toggle .line2 {
-        opacity: 0;
-    }
-
-    .toggle .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-    .registered-in-england {
-        display: none;
-    }
-
-    .image-icon {
-        width: 20%;
-    }
-
-    .image {
-        width: 100%;
-    }
-
-    .image img {
-        width: 100%;
-    }
-
+.message-box::before {
+  content: "";
+  background-image: url("/public/message-text-square-01_svgrepo.com\(1\).svg"); /* Replace with your message box icon path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px; /* Adjust the size of the icon */
+  height: 30px;
+}
+/* Social Media Links */
+.social-links-container {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 999;
 }
 
-@media screen and (min-width:901px) {
-
-    /*Header*/
-    .registered-in-england {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    }
-
-    .registered-in-england img {
-        width: 20%;
-    }
-
-    .image-icon {
-        width: 10%;
-    }
-
-    /*Layout*/
-
-    main {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .container1,
-    .container2,
-    .container3,
-    .container4,
-    .container5,
-    .container6 {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        margin-bottom: 2%;
-    }
-
-    .image {
-        width: 50%;
-    }
-
-    .content {
-        width: 50%;
-        padding: 2%;
-    }
-
-    .image img {
-        width: 100%;
-    }
+.social-links {
+  display: flex;
+  flex-direction: column;
 }
 
+.social-links a {
+  margin-bottom: 10px;
+}
 
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  /*Navigation - Hamburger*/
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 0;
+    top: 60px;
+    /* Adjust based on your header's height */
+    background-color: #212529;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    transition: height 0.5s ease;
+  }
+
+  .nav-links li {
+    padding: 15px 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .burger {
+    display: block;
+    color: black;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .registered-in-england {
+    display: none;
+  }
+
+  .image-icon {
+    width: 20%;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .image img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  /*Navigation - Hamburger. I am also doing a hamburger meny for tablet because too maony links and overflow otherwise*/
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 0;
+    top: 60px;
+    /* Adjust based on your header's height */
+    background-color: #212529;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    transition: height 0.5s ease;
+  }
+
+  .nav-links li {
+    padding: 15px 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .burger {
+    display: block;
+    color: black;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .registered-in-england {
+    display: none;
+  }
+
+  .image-icon {
+    width: 20%;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .image img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  /*Header*/
+  .registered-in-england {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .registered-in-england img {
+    width: 20%;
+  }
+
+  .image-icon {
+    width: 10%;
+  }
+
+  /*Layout*/
+
+  main {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .container1,
+  .container2,
+  .container3,
+  .container4,
+  .container5,
+  .container6 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2%;
+  }
+
+  .image {
+    width: 50%;
+  }
+
+  .content {
+    width: 50%;
+    padding: 2%;
+  }
+
+  .image img {
+    width: 100%;
+  }
+}
 
 /*
 html {

@@ -10,6 +10,7 @@ body {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   text-align: center;
+  margin: 0;
 }
 
 .header {
@@ -79,8 +80,7 @@ body {
 .image-icon {
   width: 70px;
   height: 50px;
-  margin-right: 50px;
-}
+  }
 .team-members {
   display: flex;
   flex-wrap: wrap;
@@ -144,11 +144,24 @@ body {
   padding: 20px 0;
   text-align: center;
   font-size: 14px;
+  margin-top: auto;
+  width: 100vw;
 }
 
 .footer div {
   display: inline-block;
+  margin: 0 10px;
   cursor: pointer;
+  color: #ffffff;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer a:active div {
+  color: blue;
 }
 
 .footer img {
@@ -208,4 +221,55 @@ body {
   .team-member .member-info {
     padding: 15px;
   }
+}
+.message-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px; /* Increase the width and height to accommodate the border */
+  height: 60px;
+  background-color: #1a2650;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+  border: 2px solid white; /* Add a white border */
+}
+
+.message-box::before {
+  content: "";
+  background-image: url("/public/message-text-square-01_svgrepo.com\(1\).svg"); /* Replace with your message box icon path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px; /* Adjust the size of the icon */
+  height: 30px;
+}
+/* Social Media Links */
+.social-links-container {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 999;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links a {
+  margin-bottom: 10px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
 }

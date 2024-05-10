@@ -1,184 +1,353 @@
 body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* Aligns content vertically */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Aligns content vertically */
 
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    background-size: 100%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: 100%;
 
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
 }
 
 h1 {
-    font-size: 61px;
+  font-size: 61px;
 }
 
 .background {
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    /* Align items vertically */
-    font-weight: 600;
-    margin-top: 30px;
+  width: 80 vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* Align items vertically */
+  font-weight: 600;
+  margin-top: 30px;
 }
 
 .background ul {
-    display: flex;
-    list-style: none;
-    /* Remove default list style */
+  display: flex;
+  list-style: none;
+  /* Remove default list style */
 }
 
 .background ul li {
-    margin-right: 20px;
-    /* Add some spacing between menu items */
+  margin-right: 20px;
+  /* Add some spacing between menu items */
 }
 
 .background ul li a {
-    color: black;
-    /* Set link color */
-    text-decoration: none;
-    /* Remove underline */
+  color: black;
+  /* Set link color */
+  text-decoration: none;
+  /* Remove underline */
 }
 
 .background ul li a:hover {
-    text-decoration: underline;
-    /* Add underline on hover */
+  text-decoration: underline;
+  /* Add underline on hover */
 }
 
 .registered-in-england {
-    display: flex;
+  display: flex;
 }
 
 .registered-in-england img {
-    width: 30px;
-    /* Set width for social icons */
-    height: 30px;
-    /* Set height for social icons */
-    margin-left: 10px;
-    /* Add some spacing between social icons */
+  width: 30px;
+  /* Set width for social icons */
+  height: 30px;
+  /* Set height for social icons */
+  margin-left: 10px;
+  /* Add some spacing between social icons */
 }
 
 /* Adjusted the selector */
 .background img.image-icon {
-    width: 70px;
-    height: 50px;
+  width: 70px;
+  height: 50px;
 }
-
 
 .container6 {
-    width: 100vw;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    background-image: url('/public/conaaact\ form.svg');
-    background-repeat: no-repeat;
-    background-size: 100%;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/public/conaaact\ form.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-
-
 .container1 {
-    width: 100vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: row;
-    float: left;
-    /* Ensure containers are aligned next to each other */
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  float: left;
+  /* Ensure containers are aligned next to each other */
 }
 
 .container5 {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    float: left;
-    /* Ensure containers are aligned next to each other */
-    border-left: 2px solid #ccc;
-    /* Add a vertical line */
-    padding-left: 20px;
-    /* Adjust padding for better spacing */
-
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  /* Ensure containers are aligned next to each other */
+  border-left: 2px solid #ccc;
+  /* Add a vertical line */
+  padding-left: 20px;
+  /* Adjust padding for better spacing */
 }
 
 .container5 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .container5 form input,
 .container5 form textarea,
 .container5 form input[type="submit"] {
-    margin-bottom: 10px;
-    /* Add spacing between form elements */
+  margin-bottom: 10px;
+  /* Add spacing between form elements */
 }
 
-
 .container10 {
-    width: 50%;
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-
-
+  width: 50%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container10 img {
-
-    width: 150px;
-    height: 50px;
-    margin-right: 5px;
-
-
+  width: 150px;
+  height: 50px;
+  margin-right: 5px;
 }
 
 .container3 {
-    display: flex;
-    flex-direction: row;
-    align-items: space-around;
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
 }
 
 #contact2 {
-
-    width: 520px;
-    height: 120px;
-    margin-right: 5px;
-
+  width: 520px;
+  height: 120px;
+  margin-right: 5px;
 }
 
 .btn {
-    width: 130px;
-    background-color: black;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 30px;
+  width: 130px;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 30px;
 }
 
 .footer {
-
-    background-color: #212529;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
-    margin-top: auto;
+  background-color: #212529;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  margin-top: auto;
+  width: 100vw;
 }
 
 .footer div {
-    display: inline-block;
-    margin: 0 10px;
-    cursor: pointer;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer a:active div {
+  color: blue;
 }
 
 .footer img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+x */ .message-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px; /* Increase the width and height to accommodate the border */
+  height: 60px;
+  background-color: #1a2650;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+  border: 2px solid white; /* Add a white border */
+}
+
+.message-box::before {
+  content: "";
+  background-image: url("/public/message-text-square-01_svgrepo.com\(1\).svg"); /* Replace with your message box icon path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px; /* Adjust the size of the icon */
+  height: 30px;
+}
+/* Social Media Links */
+.social-links-container {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 999;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links a {
+  margin-bottom: 10px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Styles for tablet devices */
+  body {
+    height: auto; /* Remove fixed height for better responsiveness */
+  }
+
+  .background {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .background ul {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .background ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .registered-in-england {
+    margin-top: 10px;
+  }
+
+  .container1 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .container5,
+  .container10 {
+    width: 100%;
+    padding: 0 20px; /* Add padding for better spacing */
+    margin-top: 20%;
+  }
+
+  .container5 {
+    border-left: none;
+    border-top: 2px solid #ccc; /* Add a horizontal line */
+    padding-top: 20px; /* Add padding for better spacing */
+  }
+
+  .container10 {
+    margin-bottom: 20px;
+  }
+
+  .container3 {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  #contact2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .container6 {
+    height: auto;
+    background-size: cover;
+  }
+
+  .footer {
+    padding: 10px 0;
+    font-size: 12px;
+    margin-top: 10%;
+  }
+
+  .footer div {
+    margin: 0 5px;
+  }
+
+  .footer img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for mobile devices */
+  h1 {
+    font-size: 36px;
+  }
+
+  .background img.image-icon {
+    width: 50px;
+    height: 35px;
+  }
+
+  .container10 img {
+    width: 100px;
+    height: 35px;
+  }
+
+  .message-box {
+    width: 40px;
+    height: 40px;
+  }
+
+  .message-box::before {
     width: 20px;
     height: 20px;
-    margin-right: 5px;
+  }
+
+  .social-links-container {
+    bottom: 60px;
+    right: 10px;
+    padding: 5px;
+  }
+
+  .social-links img {
+    width: 20px;
+    height: 20px;
+  }
 }

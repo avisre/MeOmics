@@ -1,136 +1,262 @@
 body {
-    width: 100vw;
-    height: 150vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* Aligns content vertically */
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Aligns content vertically */
 
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    background-size: 100%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: 100%;
 
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
 }
 
 h1 {
-    font-size: 61px;
+  font-size: 61px;
 }
 
 .background {
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    /* Align items vertically */
-    font-weight: 600;
-    margin-top: 30px;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* Align items vertically */
+  font-weight: 600;
+  margin-top: 30px;
 }
 
 .background ul {
-    display: flex;
-    list-style: none;
-    /* Remove default list style */
+  display: flex;
+  list-style: none;
+  /* Remove default list style */
 }
 
 .background ul li {
-    margin-right: 20px;
-    /* Add some spacing between menu items */
+  margin-right: 20px;
+  /* Add some spacing between menu items */
 }
 
 .background ul li a {
-    color: black;
-    /* Set link color */
-    text-decoration: none;
-    /* Remove underline */
+  color: black;
+  /* Set link color */
+  text-decoration: none;
+  /* Remove underline */
 }
 
 .background ul li a:hover {
-    text-decoration: underline;
-    /* Add underline on hover */
+  text-decoration: underline;
+  /* Add underline on hover */
 }
 
 .registered-in-england {
-    display: flex;
+  display: flex;
 }
 
 .registered-in-england img {
-    width: 30px;
-    /* Set width for social icons */
-    height: 30px;
-    /* Set height for social icons */
-    margin-left: 10px;
-    /* Add some spacing between social icons */
+  width: 30px;
+  /* Set width for social icons */
+  height: 30px;
+  /* Set height for social icons */
+  margin-left: 10px;
+  /* Add some spacing between social icons */
 }
 
 /* Adjusted the selector */
 .background img.image-icon {
-    width: 70px;
-    height: 50px;
+  width: 70px;
+  height: 50px;
 }
-
 
 /* Styles for the main section containing the posts */
 /* Styles for the main section containing the posts */
 main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 /* Styles for each post section */
 section {
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    width: calc(33.33% - 1.33rem);
-    /* Adjust this value based on the desired number of columns */
-    box-sizing: border-box;
-    /* Include padding and border in the element's total width and height */
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: calc(33.33% - 1.33rem);
+  /* Adjust this value based on the desired number of columns */
+  box-sizing: border-box;
+  /* Include padding and border in the element's total width and height */
 }
 
 /* Styles for the Twitter embedded tweets */
 .twitter-tweet {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
-    section {
-        width: 100%;
-    }
+  section {
+    width: 100%;
+  }
 }
 
 /* Styles for each post section */
 /* Styles for the main section containing the posts */
 
-
-
 .footer {
-
-    background-color: #212529;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
-    margin-top: auto;
+  background-color: #212529;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  margin-top: auto;
+  width: 100vw;
 }
 
 .footer div {
-    display: inline-block;
-    /* margin: 0 10px; */
-    cursor: pointer;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer a:active div {
+  color: blue;
 }
 
 .footer img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+/* Message Box */
+.message-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px; /* Increase the width and height to accommodate the border */
+  height: 60px;
+  background-color: #1a2650;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+  border: 2px solid white; /* Add a white border */
+}
+
+.message-box::before {
+  content: "";
+  background-image: url("/public/message-text-square-01_svgrepo.com\(1\).svg  "); /* Replace with your message box icon path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px; /* Adjust the size of the icon */
+  height: 30px;
+}
+
+/* Social Media Links */
+.social-links-container {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 999;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links a {
+  margin-bottom: 10px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+/* Existing styles */
+/* ... */
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  /* Tablet view */
+  .background {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .background ul {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .background ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .registered-in-england {
+    margin-top: 20px;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  section {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile view */
+  h1 {
+    font-size: 40px;
+  }
+
+  .background img.image-icon {
+    width: 50px;
+    height: 30px;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .message-box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .message-box::before {
+    width: 25px;
+    height: 25px;
+  }
+
+  .social-links-container {
+    bottom: 70px;
+  }
 }

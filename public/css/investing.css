@@ -1,146 +1,293 @@
 body {
-    width: 100vw;
-    height: 150vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    background-size: 100%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: 100%;
 
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: left;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  margin: 0;
 }
 
 h1 {
-    font-size: 61px;
+  font-size: 61px;
 }
 
 .background {
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    /* Align items vertically */
-    font-weight: 600;
-    margin-top: 30px;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* Align items vertically */
+  font-weight: 600;
+  margin-top: 30px;
 }
 
 .background ul {
-    display: flex;
-    list-style: none;
-    /* Remove default list style */
+  display: flex;
+  list-style: none;
+  /* Remove default list style */
 }
 
 .background ul li {
-    margin-right: 20px;
-    /* Add some spacing between menu items */
+  margin-right: 20px;
+  /* Add some spacing between menu items */
 }
 
 .background ul li a {
-    color: black;
-    /* Set link color */
-    text-decoration: none;
-    /* Remove underline */
+  color: black;
+  /* Set link color */
+  text-decoration: none;
+  /* Remove underline */
 }
 
 .background ul li a:hover {
-    text-decoration: underline;
-    /* Add underline on hover */
+  text-decoration: underline;
+  /* Add underline on hover */
 }
 
 .registered-in-england {
-    display: flex;
+  display: flex;
 }
 
 .registered-in-england img {
-    width: 30px;
-    /* Set width for social icons */
-    height: 30px;
-    /* Set height for social icons */
-    margin-left: 10px;
-    /* Add some spacing between social icons */
+  width: 30px;
+  /* Set width for social icons */
+  height: 30px;
+  /* Set height for social icons */
+  margin-left: 10px;
+  /* Add some spacing between social icons */
 }
 
 /* Adjusted the selector */
 .background img.image-icon {
-    width: 70px;
-    height: 50px;
+  width: 70px;
+  height: 50px;
 }
 
 .container1,
-
 .container3,
 .container4 {
-    width: 60vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 10px;
-
-
+  width: 60vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
 }
 
 .container4 {
-    width: 60vw;
-    height: 20vh;
+  width: 60vw;
+  height: 20vh;
 }
 
 iframe.pitchdeck {
-    width: 70vw;
-    height: 70vh;
+  width: 70vw;
+  height: 70vh;
 }
 
 button {
-    background-color: #283878;
-    /* Set button background color */
-    border: none;
-    /* Remove button border */
-    padding: 10px 20px;
-    /* Add padding to the button */
-    border-radius: 5px;
-    /* Add border radius for rounded corners */
+  background-color: #283878;
+  /* Set button background color */
+  border: none;
+  /* Remove button border */
+  padding: 10px 20px;
+  /* Add padding to the button */
+  border-radius: 5px;
+  /* Add border radius for rounded corners */
 }
 
 button a {
-    color: white;
-    /* Set link color */
-    text-decoration: none;
-    /* Remove underline from link */
+  color: white;
+  /* Set link color */
+  text-decoration: none;
+  /* Remove underline from link */
 }
 
 button:hover {
-    background-color: #1a2650;
-    /* Darken button background color on hover */
+  background-color: #1a2650;
+  /* Darken button background color on hover */
 }
 
-
 .footer {
-    width: 100vw;
-    background-color: #212529;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
-    margin-top: auto;
+  background-color: #212529;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  margin-top: auto;
+  width: 100vw;
 }
 
 .footer div {
-    display: inline-block;
-    margin: 0 10px;
-    cursor: pointer;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer a:active div {
+  color: blue;
 }
 
 .footer img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+/* Message Box */
+.message-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px; /* Increase the width and height to accommodate the border */
+  height: 60px;
+  background-color: #1a2650;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+  border: 2px solid white; /* Add a white border */
+}
+
+.message-box::before {
+  content: "";
+  background-image: url("/public/message-text-square-01_svgrepo.com\(1\).svg  "); /* Replace with your message box icon path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px; /* Adjust the size of the icon */
+  height: 30px;
+}
+
+/* Social Media Links */
+.social-links-container {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 999;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links a {
+  margin-bottom: 10px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .background {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .background ul {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .background ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .registered-in-england {
+    margin-top: 20px;
+  }
+
+  .container1,
+  .container3,
+  .container4 {
+    width: 90vw;
+    height: auto;
+    padding: 20px;
+  }
+
+  .container4 {
+    height: auto;
+  }
+
+  iframe.pitchdeck {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .background {
+    flex-direction: column;
+    height: auto;
+    padding: 30px;
+  }
+
+  .background ul {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .background ul li {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+
+  .registered-in-england {
+    margin-top: 20px;
+  }
+
+  .container1,
+  .container3,
+  .container4 {
+    width: 80vw;
+    height: auto;
+    padding: 30px;
+  }
+
+  .container4 {
+    height: auto;
+  }
+
+  iframe.pitchdeck {
+    width: 100%;
+    height: 500px;
+  }
 }

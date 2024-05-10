@@ -1,136 +1,291 @@
 body {
-    width: 100vw;
-    height: 150vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* Aligns content vertically */
-
-    /* background-position: center; */
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
 }
 
 h1 {
-    font-size: 61px;
+  font-size: 61px;
 }
 
 .background {
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    /* Align items vertically */
-    font-weight: 600;
-    margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  height: 30vh;
+  font-weight: 600;
+  margin-top: 30px;
 }
 
-.background ul {
-    display: flex;
-    list-style: none;
-    /* Remove default list style */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
 }
 
-.background ul li {
-    margin-right: 20px;
-    /* Add some spacing between menu items */
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #333;
+  transition: all 0.3s ease-in-out;
 }
 
-.background ul li a {
-    color: black;
-    /* Set link color */
-    text-decoration: none;
-    /* Remove underline */
+.menu-items {
+  display: flex;
+  list-style: none;
 }
 
-.background ul li a:hover {
-    text-decoration: underline;
-    /* Add underline on hover */
+.menu-items li {
+  margin-left: 20px;
+}
+
+.menu-items li a {
+  color: black;
+  text-decoration: none;
 }
 
 .registered-in-england {
-    display: flex;
+  display: flex;
 }
 
 .registered-in-england img {
-    width: 30px;
-    /* Set width for social icons */
-    height: 30px;
-    /* Set height for social icons */
-    margin-left: 10px;
-    /* Add some spacing between social icons */
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
 }
 
-/* Adjusted the selector */
 .background img.image-icon {
-    width: 70px;
-    height: 50px;
+  width: 70px;
+  height: 50px;
 }
-
 
 .container1,
 .container2,
 .container3,
 .container4 {
-    width: 100vw;
-    height: 40vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 150px;
-
-
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  padding: 20px;
 }
 
 h3 {
-    padding: 0;
+  padding: 0;
+}
+
+.image {
+  width: 40%;
+  text-align: center;
 }
 
 .image img {
-    width: 60%;
-    height: auto;
-
-
+  width: 100%;
+  height: auto;
+  border-radius: 1%;
 }
 
 .content .numbers {
-    width: 10VW;
-    height: 10vh;
+  width: 10vw;
+  height: 10vh;
 }
 
 .content {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-
-
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {
-
-    background-color: #212529;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
-    margin-top: auto;
+  background-color: #212529;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  margin-top: auto;
+  width: 100%;
 }
 
 .footer div {
-    display: inline-block;
-    margin: 0 10px;
-    cursor: pointer;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer a:active div {
+  color: blue;
 }
 
 .footer img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.message-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #1a2650;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+  border: 2px solid white;
+}
+
+.message-box::before {
+  content: "";
+  background-image: url("/public/message-text-square-01_svgrepo.com\(1\).svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.social-links-container {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 999;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links a {
+  margin-bottom: 10px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .menu-items {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-items li {
+    margin: 10px 0;
+  }
+
+  .hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu-items.active {
+    display: block;
+  }
+
+  .container1,
+  .container2,
+  .container3,
+  .container4 {
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+
+  .image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .content .numbers {
+    width: 15vw;
+    height: 15vh;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .background img.image-icon {
+    width: 50px;
+    height: 30px;
+  }
+
+  .content .numbers {
+    width: 20vw;
+    height: 20vh;
+  }
+
+  .message-box {
+    width: 40px;
+    height: 40px;
+  }
+
+  .message-box::before {
     width: 20px;
     height: 20px;
-    margin-right: 5px;
+  }
+
+  .social-links-container {
+    bottom: 70px;
+    right: 10px;
+    padding: 5px;
+  }
+
+  .social-links img {
+    width: 20px;
+    height: 20px;
+  }
 }
