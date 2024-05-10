@@ -4,6 +4,30 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>meOmics: Personalized Medicine for Mental Health</title>
+    <meta name="description" content="meOmics is a Welsh biotech startup developing a platform for precision psychiatry. We use patient data and cellular assays to predict treatment response for severe mental illnesses.">
+    <meta name="keywords" content="meOmics, precision medicine, mental health, psychiatry, schizophrenia, bipolar disorder, personalized treatment, patient data, cellular assays, Cardiff, Wales">
+    <!-- Social Media Links -->
+    <meta property="og:title" content="meOmics: Personalized Medicine for Mental Health">
+    <meta property="og:description" content="meOmics is a Welsh biotech startup developing a platform for precision psychiatry. We use patient data and cellular assays to predict treatment response for severe mental illnesses.">
+   
+    <meta property="og:url" content="https://twitter.com/MeOmics_Pre_Med">
+  
+    <meta name="twitter:site" content="@MeOmics_Pre_Med">
+    <meta name="twitter:creator" content="@YourTwitterHandle">
+    <meta name="twitter:title" content="meOmics: Personalized Medicine for Mental Health">
+    <meta name="twitter:description" content="meOmics is a Welsh biotech startup developing a platform for precision psychiatry. We use patient data and cellular assays to predict treatment response for severe mental illnesses.">
+   
+      <!-- LinkedIn -->
+      <meta property="og:type" content="website">
+      <meta property="og:locale" content="en_US">
+      <meta property="og:site_name" content="meOmics">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="630">
+      <meta property="og:url" content="https://www.linkedin.com/company/meomics-technology/">
+      <meta property="og:title" content="meOmics: Personalized Medicine for Mental Health">
+      <meta property="og:description" content="meOmics is a Welsh biotech startup developing a platform for precision psychiatry. We use patient data and cellular assays to predict treatment response for severe mental illnesses.">
+      <meta property="og:article:author" content="https://www.linkedin.com/company/meomics-technology/">
     <link rel="stylesheet" href="/public/css/investing.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,13 +106,31 @@
 
         </section>
     </main>
+                <!-- Message Box -->
+<div class="message-box">
+    <i class="fa fa-comments"></i>
+</div>
 
+<!-- Social Media Links -->
+<div class="social-links-container">
+    <div class="social-links">
+        <a href="https://www.whatsapp.com" target="_blank">
+            <img src="/public/whatsapp-icon-logo_svgrepo.com.svg" alt="WhatsApp">
+        </a>
+        <a href="https://www.linkedin.com/company/meomics-technology/" target="_blank">
+            <img src="/public/linkedin_svgrepo.com.svg" alt="LinkedIn">
+        </a>
+        <a href="https://twitter.com/MeOmics_Pre_Med" target="_blank">
+            <img src="/public/twitter-3-logo_svgrepo.com (1).svg" alt="Twitter">
+        </a>
+    </div>
+</div> 
     <footer>
 
         <div class="footer">
-            <div class="link-terms">TERMS AND CONDITIONS</div>
-            <div class="link-privacy">PRIVACY POLICY</div>
-            <div class="link-cookies">COOKIES</div>
+            <a href="/views/privacy.html"><div class="link-terms">TERMS AND CONDITIONS</div></a> 
+            <a href="/views/privacy.html"><div class="link-privacy">PRIVACY POLICY</div></a>
+            <a href="/views/privacy.html"><div class="link-cookies">COOKIES</div></a>
             <div class="meomics">© MeOmics</div>
             <div class="background5">
                 <div class="background6">
@@ -105,6 +147,15 @@
             </div>
 
     </footer>
+    
+    <script>
+        const messageBox = document.querySelector('.message-box');
+const socialLinksContainer = document.querySelector('.social-links-container');
+
+messageBox.addEventListener('click', () => {
+    socialLinksContainer.style.display = socialLinksContainer.style.display === 'none' ? 'block' : 'none';
+});
+    </script>
 </body>
 
 </html>
